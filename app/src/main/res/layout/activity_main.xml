@@ -1,0 +1,172 @@
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="386dp"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="26dp"
+            android:layout_alignStart="@+id/CPU"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Seleccion del Jugador"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/CPU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="102dp"
+            android:layout_toEndOf="@+id/Piedra"
+            android:text="Eleccion de la consola"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="104dp" />
+
+        <TextView
+            android:id="@+id/Marcador"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/puntos"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-94dp"
+            android:layout_marginTop="181dp"
+            android:text="Consola                     Puntaje                             Usuario"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <Button
+            android:id="@+id/Piedra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Papel"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="33dp"
+            android:text="Piedra"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="327dp" />
+
+        <Button
+            android:id="@+id/Papel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Tijera"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="2dp"
+            android:text="Papel"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="327dp" />
+
+        <Button
+            android:id="@+id/Tijera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginBottom="209dp"
+            android:layout_toEndOf="@+id/Jugar"
+            android:text="Tijera"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="265dp"
+            tools:layout_editor_absoluteY="327dp" />
+
+        <Button
+            android:id="@+id/Jugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="144dp"
+            android:text="Jugar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="405dp" />
+
+        <TextView
+            android:id="@+id/usuario"
+            android:layout_width="139dp"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="-16dp"
+            android:layout_toStartOf="@+id/Tijera"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <TextView
+            android:id="@+id/consola"
+            android:layout_width="139dp"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="136dp"
+            android:layout_marginEnd="-14dp"
+            android:layout_toStartOf="@+id/Tijera"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="160dp" />
+
+        <TextView
+            android:id="@+id/puntos"
+            android:layout_width="139dp"
+            android:layout_height="22dp"
+            android:layout_alignEnd="@+id/Papel"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="215dp"
+            android:layout_marginEnd="-23dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="257dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="216dp" />
+
+
+        <TextView
+            android:id="@+id/conso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="216dp" />
+
+        <TextView
+            android:id="@+id/usu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="216dp"
+            android:layout_marginEnd="51dp" />
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
